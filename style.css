@@ -1,13 +1,17 @@
-/*Estilos generales */
+/**
+ * Estilos generales
+ *
+ * @format
+ */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
 }
 
-body{
+body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -17,32 +21,35 @@ body{
     background: url(imagenes/fondo.jpg) no-repeat center center/ cover;
 }
 
+
 /*contenedor*/
 
-.contenedor{
-    width: 700px;
-    min-height: 500px;
+.contenedor  {
+    max-width: 500px;
+    max-height: 350px;
     background-color: #404040;
-    padding: 40px;
+    padding: 0px;
     border: 5px solid black;
     border-radius: 20px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
+    margin: 1rem;
 }
+
 
 
 /*Titulo*/
 
-h1{
+h1 {
     font-size: 50px;
     font-weight: bold;
 }
 
 /*ingresar texto - input */
 
-input{
+input {
     background-color: grey;
     width: 80%;
     height: 50px;
@@ -53,7 +60,7 @@ input{
     border-radius: 10px;
 }
 
-button{
+button {
     width: 150px;
     height: 60px;
     padding: 10px;
@@ -64,19 +71,19 @@ button{
     border: none;
     cursor: pointer;
     user-select: none;
-    box-shadow: 0 0 4px 0  black;
+    box-shadow: 0 0 4px 0 black;
 }
 
 /* Lista de tareas */
 
-#lista-de-tareas{
+#lista-de-tareas {
     width: 80%;
     margin-top: 20px;
 }
 
 /* Tareas */
 
-.tarea{
+.tarea {	
     width: 100%;
     min-height: 70px;
     font-size: 25px;
@@ -94,35 +101,48 @@ button{
 
 /* Tarea completada*/
 
-.tarea.completada{
+.tarea.completada {
     text-decoration: line-through;
     background-color: black;
     border: none;
 }
 
-.tarea p{
+.tarea p {
     max-width: 350px;
 }
 /* iconos */
 
-i{
-    margin:5px ;
+i {
+    margin: 5px;
     padding: 10px;
     cursor: pointer;
 }
 
-.icono-completar{
-    color: rgb(0,255,0);
+.icono-completar {
+    color: rgb(0, 255, 0);
 }
-.icono-completada{
-    color: rgb(255,0,0);
+.icono-completada {
+    color: rgb(255, 0, 0);
 }
 
-.icono-eliminar{
+.icono-eliminar {
     color: white;
 }
 
 .icono-completar:hover,
-.icono-eliminar:hover{
-    background-color: rgba(255,255,255,0.523);
+.icono-eliminar:hover {
+    background-color: rgba(255, 255, 255, 0.523);
 }
+
+/* _________________________________________________________________________________ */
+
+.imageCrown {
+    transform: scale(2.8);
+    position: absolute;
+    bottom: 40%;
+    left: 40%;
+    border-radius: 1rem;
+    transition: 1s;
+}
+
+
